@@ -55,43 +55,43 @@ Each person should have a knock knock joke to tell.  Start with one player's kno
     1. Log into Cloud 9.
     1. In terminal in Cloud 9 (make sure you are in the root/outermost folder), type `git ` and paste in what you copied from GitHub.  Hit Enter.  Stuff will happen.
 
-  `git clone git@github.com:username/some_repository_name.git`
+   `git clone git@github.com:username/some_repository_name.git`
 
 1. Change your directory into the repository you just cloned.
 
-  `cd git-knock-knock`
+   `cd git-knock-knock`
 
 1. Create and checkout a branch.  (Instead of `my-branch`, give your branch a name you will remember.)
 
-  `git checkout -b my-branch`
+   `git checkout -b my-branch`
 
 1. Make a change and save it.
 
 1. Add the changed files to staging.  (ie - say, 'yes, those are changes I mean to save')
 
-  `git add .`
+   `git add .`
 
 1. Commit the change and add a commit message.
 
-  `git commit -m "Made my first change"`
+   `git commit -m "Made my first change"`
 
 1. Repeat steps 5-7 until your file looks good and your code is tested.
 
 1. Pull down changes from GitHub in case someone on your team has made changes since you started working.
 
-  `git pull origin master`
+   `git pull origin master`
 
 1. Merge your branch with the master branch. (Instead of `my-branch`, use the name of your branch.)
 
-  `git merge my-branch master`
+   `git merge my-branch master`
 
 1. Checkout the master branch.
 
-  `git checkout master`
+   `git checkout master`
 
 1. Merge master with your branch to close your branch.
 
-  `git merge master my-branch`
+   `git merge master my-branch`
 
 1. Push your changes back to GitHub so that others can see them.
 
@@ -114,23 +114,23 @@ Each person should have a knock knock joke to tell.  Start with one player's kno
 
   `ls` to see a list of all files in the current directory/folder
 
-- './' (current directory)
+- ./ (current directory)
 
   `ls ./` would list all files in the current directory/folder
 
-- '../' (parent of current directory)
+- ../ (parent of current directory)
 
   `cd ../` would change your directory to the parent of your current directory
 
-- '../../' (grandparent of current directory)
+- ../../ (grandparent of current directory)
 
   `cd ../../` would change your directory to the grandparent of your current directory
 
-- `/` (root directory)
+- / (root directory)
 
   `cd /` would change your directory to the grandparent of your current directory
 
-- `~` (home directory)
+- ~ (home directory)
 
 
 ## Git Glossary
