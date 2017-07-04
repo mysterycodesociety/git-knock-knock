@@ -9,7 +9,7 @@ GitHub is a company that specializes in storing git repositories in the cloud an
 
 Git branches are a way to protect your code while you are working on features.  Until your code is ready, your changes can be in a branch so that it doesn't break master code, which might be actively used in production.  It also allows multiple people to work on code at the same time, each on their own branch.
 
-<img src="./assets/git-branches" style="width:400px;">*
+<img src="./assets/git-branches.png" style="width:400px;">*
  
 
 ## Game
@@ -47,13 +47,13 @@ Each person should have a knock knock joke to tell.  Start with one player's kno
 ## Example Workflow
 
 1. One person should fork this repository.
-  1. Log on to GitHub, find this repository and click the `Fork` button to create a copy to your own account.
-  1. Add the other person as a collaborartor .  Go to the Settings section of the repo, find the Collaborator section, and search for them by GitHub username or email.
+    1. Log on to GitHub, find this repository and click the `Fork` button to create a copy to your own account.
+    1. Add the other person as a collaborartor .  Go to the Settings section of the repo, find the Collaborator section, and search for them by GitHub username or email.
 
 1. Clone the repository.
-  1. In GitHub on the repository you will share, click the `Clone or download` button and copy the SSH address for the repository (should start with git@github.com).
-  1. Log into Cloud 9.
-  1. In terminal in Cloud 9 (make sure you are in the root/outermost folder), type `git ` and paste in what you copied from GitHub.  Hit Enter.  Stuff will happen.
+    1. In GitHub on the repository you will share, click the `Clone or download` button and copy the SSH address for the repository (should start with git@github.com).
+    1. Log into Cloud 9.
+    1. In terminal in Cloud 9 (make sure you are in the root/outermost folder), type `git ` and paste in what you copied from GitHub.  Hit Enter.  Stuff will happen.
 
   `git clone git@github.com:username/some_repository_name.git`
 
@@ -61,9 +61,9 @@ Each person should have a knock knock joke to tell.  Start with one player's kno
 
   `cd git-knock-knock`
 
-1. Create and checkout a branch.  (Instead of `myBranch`, give your branch a name you will remember.)
+1. Create and checkout a branch.  (Instead of `my-branch`, give your branch a name you will remember.)
 
-  `git checkout -b myBranch`
+  `git checkout -b my-branch`
 
 1. Make a change and save it.
 
@@ -81,9 +81,9 @@ Each person should have a knock knock joke to tell.  Start with one player's kno
 
   `git pull origin master`
 
-1. Merge your branch with the master branch. (Instead of `myBranch`, use the name of your branch.)
+1. Merge your branch with the master branch. (Instead of `my-branch`, use the name of your branch.)
 
-  `git merge myBranch master`
+  `git merge my-branch master`
 
 1. Checkout the master branch.
 
@@ -91,13 +91,13 @@ Each person should have a knock knock joke to tell.  Start with one player's kno
 
 1. Merge master with your branch to close your branch.
 
-  `git merge master myBranch`
+  `git merge master my-branch`
 
 1. Push your changes back to GitHub so that others can see them.
 
 ```
   git push origin master
-  git push origin myBranch
+  git push origin my-branch
 ```
 
 
@@ -142,7 +142,7 @@ The commands you will learn today are:
 
   `git clone git@github.com:username/some_repository_name.git`
 
-  Clone a repository.  This command allows you to copy a repository that you already have on GitHub and copy it locally.
+  Clone a repository.  This command allows you to copy a repository that you already have on GitHub and work with a copy locally.
 
 
  - git status
@@ -168,7 +168,7 @@ The commands you will learn today are:
 
  - git checkout
 
-   `git checkout -b newBranch` to create a new branch or `git checkout newBranch` if it already exists.
+   `git checkout -b new-branch` to create a new branch or `git checkout new-branch` if it already exists.
 
    Checkout a branch.  Master is the default branch.  But you should create and work on new branches, so that you don't inject code that is not tested into Master for other people.  Each person works on a branch.  Then you merge your branch into master when your code is tested and ready.
 
@@ -182,8 +182,8 @@ The commands you will learn today are:
 
  - git merge (two branches together)
 
-  `git merge newBranch master` when you are merging master _into_ your branch (newBranch is checked out).
-  `git merge master newBranch` when you are _closing_ your branch (master is checked out).
+  `git merge new-branch master` when you are merging master _into_ your branch (new-branch is checked out).
+  `git merge master new-branch` when you are _closing_ your branch (master is checked out).
 
   Merge two branches together. To completely merge your branch into master, you must merge twice.
 
