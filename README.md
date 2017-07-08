@@ -107,3 +107,4 @@ Each person should have a knock knock joke to tell.  Start with one player's kno
 
 # Git Stretches
 [Git Merging](./practice-merging.md)
+[Git Revisions](./history.md)
