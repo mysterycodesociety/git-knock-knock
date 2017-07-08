@@ -50,6 +50,16 @@ Each person should have a knock knock joke to tell.  Start with one player's kno
     1. Log on to GitHub, find this repository and click the `Fork` button to create a copy to your own account.
     1. Add the other person as a collaborartor .  Go to the Settings section of the repo, find the Collaborator section, and search for them by GitHub username or email.
 
+1. Clone the repository.
+    1. In GitHub on the repository you will share, click the `Clone or download` button and copy the SSH address for the repository (should start with git@github.com).
+    1. Log into Cloud 9.
+    1. In terminal in Cloud 9 (make sure you are in the root/outermost folder), type `git ` and paste in what you copied from GitHub.  Hit Enter.  Stuff will happen.
+
+   `git clone git@github.com:username/some_repository_name.git`
+
+1. Change your directory into the repository you just cloned.
+
+   `cd git-knock-knock`
 
 1. Create and checkout a branch.  (Instead of `my-branch`, give your branch a name you will remember.)
 
