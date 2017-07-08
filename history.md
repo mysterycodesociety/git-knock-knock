@@ -60,6 +60,34 @@ Type `:q` to get out of the git log window in command line.
 
 Copy one of your previous commits numbers (not the word commit, just the number).
 
+
+
+## Git Diff - seeing changes
+
+You can see the difference between your current situation and a previous commit by using `git diff`.
+
+Go to `git log` to find a previous commit number. Copy it. `:q` to escape git log.
+
+Now use git diff to see the difference made by that commit: `git diff dade7a8282887c1085efdf51b6bc49c01d698be5`.
+
+```
+
+➜  git-knock-knock git:(master) git diff 4748cb1bbb626e84aaa2a5cffdaa1de299be7bf7
+
+diff --git a/README.md b/README.md
+index 2aba228..3db1985 100644
+--- a/README.md
++++ b/README.md
+@@ -50,6 +50,16 @@ Each person should have a knock knock joke to tell.  Start with one player's kno
+     1. Log on to GitHub, find this repository and click the `Fork` button to create a copy to your own account.
+     1. Add the other person as a collaborartor .  Go to the Settings section of the repo, find the Collaborator section, and search for them by GitHub username or email.
+ 
+```
+
+That's how you see what you saw in GitHub in terminal.  Type `:q` to exit git diff.
+
+You can also git diff unstaged changes (before you add add to staging/commit) so you can remember what you did before adding a message.
+
 Now, let's checkout that commit.
 
 ## Git Checkout - not just for branches
@@ -129,6 +157,29 @@ We're going to practice resetting the head of your branch, as though we committe
 1. `git log` to find the number of the last commit you made.  Copy the number of the commit.
 1. `:q` to exit git log.
 1. Now use git revert: `git revert dade7a8282887c1085efdf51b6bc49c01d698be5`
-1. `git log` again.  You should see a new commit in your history now, related to what you did when you `git revert`ed.  But the change you made should be gone.
+1. A commit message will appear automatically.  Nothing is necessary but type `:q` to exit.
+1. `git log` again.  You should see a new commit in your history now that says _Revert + your commit message_ , related to what you did when you `git revert`ed.  But the change you made should be gone.  Type `:q` to exit.
+
+```
+commit 6d48a5ac2f384f4332320c337fc3e255da042033
+Author: Gmfholley <gmfholley@gmail.com>
+Date:   Sat Jul 8 08:47:35 2017 -0500
+
+    Revert "A change I don't want"
+    
+    This reverts commit 4748cb1bbb626e84aaa2a5cffdaa1de299be7bf7.
+
+commit 4748cb1bbb626e84aaa2a5cffdaa1de299be7bf7
+Author: Gmfholley <gmfholley@gmail.com>
+Date:   Sat Jul 8 08:47:21 2017 -0500
+
+    A change I don't want
+
+commit b3ec2457158219024b9a5ca1d598e10364e56248
+Author: Gmfholley <gmfholley@gmail.com>
+Date:   Sat Jul 8 08:46:53 2017 -0500
+
+    Make links a list
+```
 
 Now it's part of history, but it's visible to everyone.
