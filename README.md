@@ -100,6 +100,23 @@ Each person should have a knock knock joke to tell.  Start with one player's kno
   git push origin my-branch
 ```
 
+<a name="simple-workflow"></a>
+## Simple Push of Master Branch to GitHub
+If you are not working with branche and are only working on the master branch, here is how you can push your changes to GitHub.
+
+1. Add the changed files to staging.  (ie - say, 'yes, those are changes I mean to save')
+
+   `git add .`
+
+1. Commit the change and add a commit message.
+
+   `git commit -m "Made cool changes"`
+   
+1. Push your changes back to GitHub so that others can see them.
+
+```
+  git push origin master
+```
 
 
 # Git Resources
