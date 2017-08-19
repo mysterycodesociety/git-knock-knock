@@ -102,7 +102,7 @@ Each person should have a knock knock joke to tell.  Start with one player's kno
 
 <a name="simple-workflow"></a>
 ## Simple Push of Master Branch to GitHub
-If you are not working with branche and are only working on the master branch, here is how you can push your changes to GitHub.
+If you are not working with branches and are only working on the master branch, here is how you can push your changes to GitHub.
 
 1. Add the changed files to staging.  (ie - say, 'yes, those are changes I mean to save')
 
